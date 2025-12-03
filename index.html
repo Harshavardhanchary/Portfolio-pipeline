@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Arial', sans-serif;
             background-color: #0a0a0a;
@@ -20,18 +19,15 @@
             min-height: 100vh;
             transition: all 0.3s ease;
         }
-
         body.light {
             background-color: #ffffff;
             color: #1a1a1a;
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
             position: relative;
         }
-
         .theme-toggle {
             position: fixed;
             top: 30px;
@@ -50,15 +46,12 @@
             z-index: 1000;
             color: #e5e5e5;
         }
-
         .theme-toggle:hover {
             transform: scale(1.2);
         }
-
         body.light .theme-toggle {
             color: #1a1a1a;
         }
-
         .header {
             text-align: center;
             margin-bottom: 60px;
@@ -70,13 +63,11 @@
             box-shadow: 0 8px 32px rgba(229, 229, 229, 0.1);
             transition: all 0.3s ease;
         }
-
         body.light .header {
             background: #f8f9fa;
             border-bottom-color: #1a1a1a;
             box-shadow: 0 8px 32px rgba(26, 26, 26, 0.1);
         }
-
         .name {
             font-size: 3rem;
             font-weight: bold;
@@ -85,11 +76,9 @@
             color: #e5e5e5;
             transition: color 0.3s ease;
         }
-
         body.light .name {
             color: #1a1a1a;
         }
-
         .title {
             font-size: 1.2rem;
             color: #b3b3b3;
@@ -97,11 +86,9 @@
             margin-bottom: 20px;
             transition: color 0.3s ease;
         }
-
         body.light .title {
             color: #555555;
         }
-
         .bio {
             max-width: 600px;
             margin: 0 auto;
@@ -109,11 +96,9 @@
             color: #999999;
             transition: color 0.3s ease;
         }
-
         body.light .bio {
             color: #666666;
         }
-
         .links {
             display: flex;
             justify-content: center;
@@ -121,7 +106,6 @@
             margin: 40px 0;
             flex-wrap: wrap;
         }
-
         .link {
             text-decoration: none;
             color: #e5e5e5;
@@ -135,29 +119,24 @@
             border-radius: 8px;
             background: transparent;
         }
-
         .link:hover {
             background: #e5e5e5;
             color: #0a0a0a;
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(229, 229, 229, 0.3);
         }
-
         body.light .link {
             color: #1a1a1a;
             border-color: #1a1a1a;
         }
-
         body.light .link:hover {
             background: #1a1a1a;
             color: #ffffff;
             box-shadow: 0 8px 25px rgba(26, 26, 26, 0.3);
         }
-
         .projects {
             margin-top: 60px;
         }
-
         .section-title {
             font-size: 2rem;
             margin-bottom: 30px;
@@ -167,17 +146,14 @@
             color: #e5e5e5;
             transition: color 0.3s ease;
         }
-
         body.light .section-title {
             color: #1a1a1a;
         }
-
         .project-grid {
             display: grid;
             gap: 30px;
             margin-top: 40px;
         }
-
         .project {
             border: 1px solid #2a2a2a;
             padding: 30px;
@@ -185,70 +161,56 @@
             background: #141414;
             border-radius: 12px;
         }
-
         .project:hover {
             border-color: #e5e5e5;
             transform: translateY(-5px);
             box-shadow: 0 12px 40px rgba(229, 229, 229, 0.15);
             background: #1a1a1a;
         }
-
         body.light .project {
             background: #f8f9fa;
             border-color: #e0e0e0;
         }
-
         body.light .project:hover {
             border-color: #1a1a1a;
             box-shadow: 0 12px 40px rgba(26, 26, 26, 0.15);
             background: #ffffff;
         }
-
         .project h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
         }
-
         .project h3 a {
             color: #e5e5e5;
             text-decoration: none;
             border-bottom: 2px solid transparent;
             transition: all 0.3s ease;
         }
-
         .project h3 a:hover {
             border-bottom-color: #e5e5e5;
             color: #b3b3b3;
         }
-
         body.light .project h3 a {
             color: #1a1a1a;
         }
-
         body.light .project h3 a:hover {
             border-bottom-color: #1a1a1a;
             color: #555555;
         }
-
         .project p {
             color: #999999;
             margin-bottom: 20px;
             transition: color 0.3s ease;
         }
-
         body.light .project p {
             color: #666666;
         }
-
-
-
         .tech-stack {
             display: flex;
             gap: 10px;
             margin-top: 15px;
             flex-wrap: wrap;
         }
-
         .tech {
             background: #1f1f1f;
             padding: 6px 12px;
@@ -258,27 +220,25 @@
             border-radius: 6px;
             transition: all 0.3s ease;
         }
-
         body.light .tech {
             background: #f0f0f0;
             border-color: #d0d0d0;
             color: #1a1a1a;
         }
-
         @media (max-width: 768px) {
             .name {
                 font-size: 2rem;
             }
-            
+           
             .links {
                 gap: 15px;
             }
-            
+           
             .link {
                 padding: 8px 16px;
                 font-size: 0.8rem;
             }
-            
+           
             body {
                 padding: 20px 15px;
             }
@@ -290,46 +250,41 @@
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
             ☽
         </button>
-        
+       
         <header class="header">
             <h1 class="name">Harsha vardhan</h1>
             <p class="title">Dev-Ops Engineer</p>
             <p class="bio">
                 Aspiring DevOps engineer with hands-on experience in cloud platforms, CI/CD pipelines, and automation through academic projects and self-learning.
-		Passionate about building scalable systems, improving workflows, and continuously learning new technologies.
+Passionate about building scalable systems, improving workflows, and continuously learning new technologies.
             </p>
         </header>
-
         <nav class="links">
             <a href="https://github.com/Harshavardhanchary" class="link" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/harshavardhanchary" class="link" target="_blank">LinkedIn</a>
             <a href="mailto:harshavardhanchary7@gmail.com" class="link">Gmail</a>
             <a href="https://drive.google.com/file/d/1bnttGHfvkaVFxSce4l18Uf6-we9LvxQY/view?usp=drive_link" class="link" target="_blank">Resume</a>
         </nav>
-
         <section class="projects">
             <h2 class="section-title">PROJECTS</h2>
-            
+           
             <div class="project-grid">
                 <div class="project">
                     <h3><a href="https://github.com/Harshavardhanchary/ultimate-devops-project-demo" target="_blank">Multi-Services Cloud project</a></h3>
-                    <p>Multi Micro-services project.</p>
+                    <p>A comprehensive multi-microservices cloud project deployed on AWS EKS, utilizing Docker for containerization, Terraform for infrastructure as code (IaC), S3 for object storage, VPC for secure networking, and Prometheus/Grafana for real-time monitoring and alerting to ensure high availability and observability.</p>
                     <div class="tech-stack">
                         <span class="tech">EKS</span>
                         <span class="tech">Docker</span>
                         <span class="tech">Terraform</span>
-			<span class="tech">S3</span>
+                        <span class="tech">S3</span>
                         <span class="tech">VPC</span>
-			<span class="tech">Prometheus</span>
+                        <span class="tech">Prometheus</span>
                         <span class="tech">Grafana</span>
-                        <span class="tech"></span>
-
                     </div>
                 </div>
-
                 <div class="project">
                     <h3><a href="https://github.com/Harshavardhanchary/Library-Manager.git" target="_blank">Library Manager</a></h3>
-                    <p>Devopsified a two-tier application from scratch.</p>
+                    <p>A DevOps-optimized two-tier library management application built from scratch, featuring automated CI/CD pipelines with Jenkins, deployment on EC2 instances, Docker containerization, orchestration via lightweight k3s Kubernetes cluster, and GitOps management using ArgoCD for seamless updates and rollbacks.</p>
                     <div class="tech-stack">
                         <span class="tech">Jenkins</span>
                         <span class="tech">EC2</span>
@@ -338,10 +293,20 @@
                         <span class="tech">Argocd</span>
                     </div>
                 </div>
-
                 <div class="project">
-                    <h3><a href="https://github.com/Harshavardhanchary/Portfolio-pipeline.git" target="_blank">Portfoilo Pipeline Automationn</a></h3>
-                    <p>GitHub Actions-based portfolio pipeline with automated depolyment.</p>
+                    <h3><a href="https://github.com/Harshavardhanchary/Devops-Assignment" target="_blank">GitHub Actions Minikube CI/CD Pipeline</a></h3>
+                    <p>A DevOps project demonstrating automated testing and deployment using GitHub Actions workflows integrated with Minikube for local Kubernetes simulation. This setup builds Docker images, runs unit and integration tests, and deploys to a simulated K8s environment, reducing cloud costs while mimicking production workflows.</p>
+                    <div class="tech-stack">
+                        <span class="tech">GitHub Actions</span>
+                        <span class="tech">Minikube</span>
+                        <span class="tech">Docker</span>
+                        <span class="tech">Kubernetes</span>
+                        <span class="tech">Helm</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/Harshavardhanchary/Portfolio-pipeline.git" target="_blank">Portfolio Pipeline Automation</a></h3>
+                    <p>GitHub Actions-based CI/CD pipeline for automating the build, testing, and deployment of this personal portfolio website, hosted statically on AWS S3 with global distribution via CloudFront CDN, DNS management through Route53, and Docker for consistent build environments.</p>
                     <div class="tech-stack">
                         <span class="tech">GitHub</span>
                         <span class="tech">GitHub Actions</span>
@@ -354,14 +319,13 @@
             </div>
         </section>
     </div>
-
     <script>
         function toggleTheme() {
             const body = document.body;
             const themeButton = document.querySelector('.theme-toggle');
-            
+           
             body.classList.toggle('light');
-            
+           
             // Update button icon
             if (body.classList.contains('light')) {
                 themeButton.innerHTML = '☀';
@@ -371,12 +335,11 @@
                 localStorage.setItem('theme', 'dark');
             }
         }
-
         // Load saved theme on page load
         document.addEventListener('DOMContentLoaded', function() {
             const savedTheme = localStorage.getItem('theme');
             const themeButton = document.querySelector('.theme-toggle');
-            
+           
             if (savedTheme === 'light') {
                 document.body.classList.add('light');
                 themeButton.innerHTML = '☀';
