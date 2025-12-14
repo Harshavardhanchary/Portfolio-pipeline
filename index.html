@@ -229,16 +229,16 @@
             .name {
                 font-size: 2rem;
             }
-           
+          
             .links {
                 gap: 15px;
             }
-           
+          
             .link {
                 padding: 8px 16px;
                 font-size: 0.8rem;
             }
-           
+          
             body {
                 padding: 20px 15px;
             }
@@ -250,7 +250,7 @@
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
             ☽
         </button>
-       
+      
         <header class="header">
             <h1 class="name">Harsha vardhan</h1>
             <p class="title">Dev-Ops Engineer</p>
@@ -267,7 +267,7 @@ Passionate about building scalable systems, improving workflows, and continuousl
         </nav>
         <section class="projects">
             <h2 class="section-title">PROJECTS</h2>
-           
+          
             <div class="project-grid">
                 <div class="project">
                     <h3><a href="https://github.com/Harshavardhanchary/ultimate-devops-project-demo" target="_blank">Multi-Services Cloud project</a></h3>
@@ -280,6 +280,17 @@ Passionate about building scalable systems, improving workflows, and continuousl
                         <span class="tech">VPC</span>
                         <span class="tech">Prometheus</span>
                         <span class="tech">Grafana</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/Harshavardhanchary/chattingo/" target="_blank">Real-Time Chat Application</a></h3>
+                    <p>A full-stack real-time chat application built with React, Spring Boot, and WebSocket technology, with a strong emphasis on DevOps practices and CI/CD automation. The application is containerized using Docker and deployed through a Jenkins CI/CD pipeline, leveraging Jenkins Shared Libraries to keep pipelines clean, reusable, and scalable.</p>
+                    <div class="tech-stack">
+                        <span class="tech">React</span>
+                        <span class="tech">Spring Boot</span>
+                        <span class="tech">WebSocket</span>
+                        <span class="tech">Docker</span>
+                        <span class="tech">Jenkins</span>
                     </div>
                 </div>
                 <div class="project">
@@ -323,9 +334,9 @@ Passionate about building scalable systems, improving workflows, and continuousl
         function toggleTheme() {
             const body = document.body;
             const themeButton = document.querySelector('.theme-toggle');
-           
+          
             body.classList.toggle('light');
-           
+          
             // Update button icon
             if (body.classList.contains('light')) {
                 themeButton.innerHTML = '☀';
@@ -339,7 +350,7 @@ Passionate about building scalable systems, improving workflows, and continuousl
         document.addEventListener('DOMContentLoaded', function() {
             const savedTheme = localStorage.getItem('theme');
             const themeButton = document.querySelector('.theme-toggle');
-           
+          
             if (savedTheme === 'light') {
                 document.body.classList.add('light');
                 themeButton.innerHTML = '☀';
